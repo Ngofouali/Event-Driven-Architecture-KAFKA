@@ -2,25 +2,7 @@
 
 Ce projet est une application **Spring Boot** qui illustre, de bout en bout, la mise en œuvre d'une **architecture orientée événements (Event Driven Architecture)** et du **traitement de flux en temps réel (Real Time Stream Processing)** avec **Apache Kafka**, **Spring Cloud Stream** et **Kafka Streams**.
 
-Il s'inspire du tutoriel *« Event Driven Architecture – Spring Cloud Streams – KAFKA »* de **Mohamed Youssfi** ([vidéo YouTube](https://www.youtube.com/watch?v=8uY7JE_X_Fw)) et reprend le code du dépôt [`kafka-spring-cloud-stream`](https://github.com/mohamedYoussfi/kafka-spring-cloud-stream).
-
 L'application manipule des évènements de type **`PageEvent`** (visites de pages web) et démontre les principaux modèles de programmation de Spring Cloud Stream : **Producer**, **Consumer**, **Supplier** et **Function** (Kafka Streams), le tout couronné par une **application web temps réel** affichant les statistiques calculées par le moteur de stream processing.
-
-![Architecture](captures/img.png)
-
----
-
-## Sommaire
-
-1. [Télécharger Kafka](#1-télécharger-kafka)
-2. [Démarrer Zookeeper](#2-démarrer-zookeeper)
-3. [Démarrer Kafka-server](#3-démarrer-kafka-server)
-4. [Tester avec kafka-console-producer et kafka-console-consumer](#4-tester-avec-kafka-console-producer-et-kafka-console-consumer)
-5. [Un Service Producer Kafka via un Rest Controller](#5-un-service-producer-kafka-via-un-rest-controller)
-6. [Un Service Consumer Kafka](#6-un-service-consumer-kafka)
-7. [Un Service Supplier Kafka](#7-un-service-supplier-kafka)
-8. [Un Service de Data Analytics Real Time Stream Processing avec Kafka Streams](#8-un-service-de-data-analytics-real-time-stream-processing-avec-kafka-streams)
-9. [Une application web qui affiche les résultats du Stream Data Analytics en temps réel](#9-une-application-web-qui-affiche-les-résultats-du-stream-data-analytics-en-temps-réel)
 
 ---
 
